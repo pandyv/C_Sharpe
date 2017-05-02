@@ -1,0 +1,12 @@
+c:\users\user\documents\visual studio 2017\Projects\Taxis\Taxis\obj\Debug\Taxis1.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2017\Projects\Taxis\Taxis\bin\Debug\Taxis.exe.config
+c:\users\user\documents\visual studio 2017\Projects\Taxis\Taxis\bin\Debug\Taxis.exe
+c:\users\user\documents\visual studio 2017\Projects\Taxis\Taxis\bin\Debug\Taxis.pdb
+c:\users\user\documents\visual studio 2017\Projects\Taxis\Taxis\obj\Debug\Taxis.exe
+c:\users\user\documents\visual studio 2017\Projects\Taxis\Taxis\obj\Debug\Taxis.pdb
+C:\Users\user\Source\Repos\C_Sharpe\Taxis\Taxis\bin\Debug\Taxis.exe.config
+C:\Users\user\Source\Repos\C_Sharpe\Taxis\Taxis\bin\Debug\Taxis.exe
+C:\Users\user\Source\Repos\C_Sharpe\Taxis\Taxis\bin\Debug\Taxis.pdb
+C:\Users\user\Source\Repos\C_Sharpe\Taxis\Taxis\obj\Debug\Taxis1.csprojResolveAssemblyReference.cache
+C:\Users\user\Source\Repos\C_Sharpe\Taxis\Taxis\obj\Debug\Taxis.exe
+C:\Users\user\Source\Repos\C_Sharpe\Taxis\Taxis\obj\Debug\Taxis.pdb
