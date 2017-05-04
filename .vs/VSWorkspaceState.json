@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Taxis\\Taxis"
+    "\\Taxis",
+    "\\Taxis\\Taxis",
+    "\\Taxis\\Taxis\\Cars",
+    "\\Taxis\\Taxis\\Factory"
   ],
-  "SelectedNode": "\\Taxis",
+  "SelectedNode": "\\Taxis\\Taxis.sln",
   "PreviewInSolutionExplorer": false
 }
