@@ -43,7 +43,7 @@ namespace Taxis1
             Console.WriteLine();
             foreach (var items in taxis.FindCarSpeed(20, 200))
             {
-                Console.WriteLine("Авто: {0}, Скорость: {1}", items.name, items.speed);
+                Console.WriteLine("Авто: {0}, Скорость: {1}", items.Name, items.Speed);
             }
 
             Console.WriteLine();

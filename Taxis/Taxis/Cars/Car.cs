@@ -8,17 +8,17 @@ namespace Taxis1.Cars
 {
     public abstract class Car
     {
-        public string name { get; private set; }
-        public int cost { get; private set; }
-        public int consumption { get; private set; }
-        public int speed { get; private set; }
+        public string Name { get; private set; }
+        public int Cost { get; private set; }
+        public int Consumption { get; private set; }
+        public int Speed { get; private set; }
 
         public Car (string carName, int carCost, int carConsumption, int carSpeed)
         {
-            this.name = carName;
-            this.cost = carCost;
-            this.consumption = carConsumption;
-            this.speed = carSpeed;
+            this.Name = carName;
+            this.Cost = carCost;
+            this.Consumption = carConsumption;
+            this.Speed = carSpeed;
 
         }
 

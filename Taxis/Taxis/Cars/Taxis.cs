@@ -24,12 +24,13 @@ namespace Taxis1.Cars
 
         public int CarCost()
         {
-            return items.Sum(x => x.cost);
+            return items.Sum(x => x.Cost);
         }
 
         public void Sort()
         {
-            var temp = items.OrderBy(x => x.consumption).ToList();
+            
+            var temp = items.OrderBy(x => x.Consumption).ToList();
             items.Clear();
             foreach (var item in temp)
             {
@@ -44,7 +45,7 @@ namespace Taxis1.Cars
 
         public IEnumerable<Car> FindCarSpeed(int min, int max)
         {
-            return items.Where(x => (x.speed >= min) && (x.speed <= max)).ToList();
+            return items.Where(x => (x.Speed >= min) && (x.Speed <= max)).ToList();
         }
 
     }

@@ -14,7 +14,7 @@ namespace Taxis1
             Console.WriteLine("Таксопарк: ");
             foreach (var i in taxis.Items)
             {
-                Console.WriteLine("Автомобиль: {0}, Стоимость: {1}, Расход: {2}, Скорость: {3},", i.name, i.cost, i.consumption, i.speed);
+                Console.WriteLine("Автомобиль: {0}, Стоимость: {1}, Расход: {2}, Скорость: {3},", i.Name, i.Cost, i.Consumption, i.Speed);
             }
 
         }
