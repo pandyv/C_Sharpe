@@ -26,8 +26,8 @@ namespace TextContents1
 
             try
             {
-                Console.WriteLine();
-                Console.WriteLine("******считываем построчно********");
+                //Console.WriteLine();
+                //Console.WriteLine("**************");
                 using (StreamReader sr = new StreamReader(path, System.Text.Encoding.Default))
                 {
                     string line;
@@ -40,10 +40,11 @@ namespace TextContents1
                         line = line.Trim();
                         line = line.Replace("  ", " ");
 
-                        Console.WriteLine(line);
+                        //Console.WriteLine(line);
 
-                        Console.WriteLine();
-                        Console.WriteLine("**************");
+                        //Console.WriteLine();
+                        //Console.WriteLine("**************");
+
                         string[] words = line.Split(new char[] { ' ' });
 
                         foreach (string s in words)
