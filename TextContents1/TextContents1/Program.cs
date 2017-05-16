@@ -15,13 +15,15 @@ namespace TextContents1
 
             string[] Separators = new string[] { "?", "!", ".", ",", "#", "*", "\"", ":", ";", "-", "<", ">", "?!" };
 
+            //сортированный список слов в тексте (храним: слово, индекс для списка кол-ва вхождений в текст и номеров страниц )
             SortedList<string, int> ListOfWords = new SortedList<string, int>();
+            //список кол-ва вхождений в текст и номеров страниц
             var symbolcount = new List<SymbolCount>();
 
             int count = -1;
 
 
-            int words_count = 1;
+            int words_count = 1;  
             string pages_count = "";
 
             try
@@ -34,17 +36,17 @@ namespace TextContents1
 
                     while ((line = sr.ReadLine()) != null)
                     {
+                        // удаляем все знаки заменяя на пробелы
                         foreach (string separators in Separators)
                             line = line.Replace(separators, " ");
-
+                        // удаляем лишние пробелы
                         line = line.Trim();
                         line = line.Replace("  ", " ");
 
                         //Console.WriteLine(line);
-
-                        //Console.WriteLine();
                         //Console.WriteLine("**************");
 
+                        // разбиваем на слова
                         string[] words = line.Split(new char[] { ' ' });
 
                         foreach (string s in words)
@@ -69,8 +71,20 @@ namespace TextContents1
 
                 //foreach (string ss in keys) Console.WriteLine("{0}, {1}", ss, ListOfWords[ss]);
 
+                char old_symbol=' ';
+                char symbol = ' ';
+
                 foreach (string ss in keys)
                 {
+                    symbol = Char.ToUpper(ss[0]);
+                    if (old_symbol!= symbol)
+                    {
+                        //Console.WriteLine("{0}", Char.ToUpper(symbol));
+                        Console.WriteLine("{0}", symbol);
+                        old_symbol = symbol;
+                    }
+                    
+
                     Console.WriteLine("{0}, {1}, {2}" , ss, symbolcount[ListOfWords[ss]].Counts, symbolcount[ListOfWords[ss]].Pages );
 
                 }
