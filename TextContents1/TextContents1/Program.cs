@@ -23,8 +23,12 @@ namespace TextContents1
             int count = -1;
 
 
-            int words_count = 1;  
-            string pages_count = "";
+            int symbol_line = 50;  // кол-во символов в строке
+            int pages_line = 10;   // кол-во строк в странице
+            int count_pages = 1;   // ном. страницы    
+            int count_line = 0; // число-строк
+            int line_length = 0;
+            //double d;
 
             try
             {
@@ -36,6 +40,23 @@ namespace TextContents1
 
                     while ((line = sr.ReadLine()) != null)
                     {
+
+                       // line_length = line.Length;
+                       // if (line_length <= symbol_line)
+                       // {
+                        //    ++count_line;
+                       // }
+                       // else
+                       // {
+                        //    int d = line_length % symbol_line;
+                        //    if (d > 0)
+                        //    {
+                        //        count_line += line_length / symbol_line +1;
+                        //    }
+                        //}
+
+
+
                         // удаляем все знаки заменяя на пробелы
                         foreach (string separators in Separators)
                             line = line.Replace(separators, " ");
@@ -80,11 +101,11 @@ namespace TextContents1
                     if (old_symbol!= symbol)
                     {
                         //Console.WriteLine("{0}", Char.ToUpper(symbol));
+                        Console.WriteLine();
                         Console.WriteLine("{0}", symbol);
                         old_symbol = symbol;
                     }
                     
-
                     Console.WriteLine("{0}, {1}, {2}" , ss, symbolcount[ListOfWords[ss]].Counts, symbolcount[ListOfWords[ss]].Pages );
 
                 }
